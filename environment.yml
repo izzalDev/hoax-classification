@@ -1,0 +1,20 @@
+name: hoax-classification
+channels:
+- anaconda
+- conda-forge
+- pip
+dependencies:
+- python=3.10
+- nb_conda_kernels
+- matplotlib
+- numpy
+- pandas
+- scikit-learn
+- skl2onnx
+- mlflow
+- dvc
+- nltk
+- python-dotenv
+- pip:
+  - sastrawi
+
