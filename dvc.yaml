@@ -11,5 +11,6 @@ stages:
     cmd: python src/preprocess.py
     deps:
     - src/preprocess.py
+    - data/raw.csv
     outs:
     - data/preprocessed.csv
