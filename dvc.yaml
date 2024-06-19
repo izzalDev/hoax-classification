@@ -3,6 +3,7 @@ stages:
     cmd: python src/prepare.py
     deps:
     - src/prepare.py
+    - params.yaml
     params:
     - date
     outs:
@@ -12,5 +13,6 @@ stages:
     deps:
     - src/preprocess.py
     - data/raw.csv
+    - params.yaml
     outs:
     - data/preprocessed.csv
