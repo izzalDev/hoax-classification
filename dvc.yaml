@@ -1,0 +1,15 @@
+stages:
+  get_data:
+    cmd: python src/prepare.py
+    deps:
+    - src/prepare.py
+    params:
+    - date
+    outs:
+    - data/raw.csv
+  preprocess:
+    cmd: python src/preprocess.py
+    deps:
+    - src/preprocess.py
+    outs:
+    - data/preprocessed.csv
